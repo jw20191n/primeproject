@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<head>
+	<title>Prime Medical Interpreting Training</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="mystyles.css">
+
+
+
+</head>
+
+
+<body>
+<header>
+	<a href="prime.html"> 
+	<div id="home">
+		
+	</div>
+	</a>
+
+	<div class="handle">
+		MENU
+	</div>
+
+	<nav>
+		<ul class="hiding">
+			<li><a href="sample.html">SAMPLE</a></li>
+			<li><a href="review.html">REVIEWS</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="prep.html">PREPARATION</a></li>
+		</ul>
+
+		<div id="member">
+			<ul class="hiding">
+				<li><button id="button1" href="" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</button></li>
+				<li><a href="priceexp.html">Sign Up</a></li>
+			</ul>
+		</div>
+	</nav>
+
+</header>
+
+
+<div id="id01" class="modal">
+
+<form class="modal-content animate" action="/action_page.php">
+  
+  <div class="container">
+  	<h1>Sign In</h1>
+  	<h4>New to Prime Medical Training? <a href="priceexp.html">Sign Up here!</a></h4>
+  	<label class="info"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+	<label class="info"><b>Password</b></label>
+  	<input type="password" placeholder="Enter Password" name="psw" required>
+    
+  	<button type="submit" id="login">Log In</button>
+  	<input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  	 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+ 	 <span class="psw"> <a href="#">I forgot my password</a></span>
+  </div>
+
+</form>
+
+</div>
+
+
+
+<div class="background">
+
+	<div class="intro">
+ 		<div id="description"> 
+ 			<div id="word">
+ 			<p>Prime Medical Interpreting Training is a service for current medical interpreters or people who are preparing for CMI and CCHI exams. 
+ 			</p>
+ 			<p>It has 250 cases. xxx numbers of medical terminologies. </p>
+ 			<p>Male and Female voices. </p>
+ 			<p>Practice interpreting your own pace.</p>
+ 			</div>
+
+ 		</div>
+ 		<div id="picture"> </div>
+
+ 	</div>
+
+</div>
+
+
+<script>
+   $('.handle').on('click', function(){
+   $('.hiding').toggleClass('showing');
+ });
+
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+</script>
+
+
+</body>
+</html>

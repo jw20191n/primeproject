@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<head>
+	<title>Sample Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="sample.css">
+
+
+
+</head>
+
+
+<body>
+<header>
+	<a href="prime.html"> 
+	<div id="home">
+		
+	</div>
+	</a>
+
+	<div class="handle">
+		MENU
+	</div>
+
+	<nav>
+		<ul class="hiding">
+			<li><a href="sample.html">SAMPLE</a></li>
+			<li><a href="review.html">REVIEWS</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="prep.html">PREPARATION</a></li>
+		</ul>
+
+		<div id="member">
+			<ul class="hiding">
+				<li><button id="button1" href="" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</button></li>
+				<li><a href="priceexp.html">Sign Up</a></li>
+			</ul>
+		</div>
+	</nav>
+
+</header>
+
+
+<div id="id01" class="modal">
+
+<form class="modal-content animate" action="/action_page.php">
+  
+  <div class="container">
+  	<h1>Sign In</h1>
+  	<h4>New to Prime Medical Training? <a href="priceexp.html">Sign Up here!</a></h4>
+  	<label class="info"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+	<label class="info"><b>Password</b></label>
+  	<input type="password" placeholder="Enter Password" name="psw" required>
+    
+  	<button type="submit" id="login">Log In</button>
+  	<input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  	 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+ 	 <span class="psw"> <a href="#">I forgot my password</a></span>
+  </div>
+
+</form>
+
+</div>
+
+
+
+<div class="background">
+
+	<div class="samplecontainer">
+ 		<div id="containerfront">
+ 			<p><h2>Now try practice at your own pace!<h2></p>
+ 			<br/>
+
+ 			<p>This part inlcudes sample cases 10 to 21. </p>
+ 			<p>Users should first listen the case, then pause, practice interpreting, then hit the play button and continue listening next cases. </p>
+ 			<p>Click "Show / Hide script" button to see the scripts.</p>
+ 			<br/>
+
+
+ 			<audio src="ROB_TRACK_2.mp3" id="audioExample" controls=""></audio>
+
+ 			<div class="controls">
+ 				<button class="audiobutton" onclick="document.getElementById('audioExample').play()">Play</button>
+ 				<button class="audiobutton" onclick="document.getElementById('audioExample').pause()">Pause</button>
+ 				<button id="showverbate" onclick="myFunction()">Show / Hide script</button>
+ 			</div>
+
+
+ 			<div id="audioverbate">
+ 				
+ 				<p>11) Your father has leukemia. He needs a bone marrow transplant. Bone marrow is taken from the hip of the donor and given to the patient.  </p>
+
+				<p>12) In IVF, your egg is fertilized by sperm in a test tube outside your body. In IUI, we place sperm inside your uterus to facilitate fertilization. </p>
+
+				<p>13) The goal is to increase the number of sperm that reach your fallopian tubes. IUI is much less expensive than IVF. When was the first day of your last menstrual period?</p>
+
+				<p>14) A physician assistant is a medical professional who operates under a doctor's supervision. A physician assistant must practice under the supervision of a physician. </p>
+
+				<p>15) A Nurse Practitioner may have more independence in that they can carry out some tasks in providing healthcare and assistance independently, without supervision by a physician.</p>
+
+				<p>16) Social workers offer the support and resources that patients need. They also work for discharge, transportation and counseling plans.</p>
+
+
+				<p>17) I think you have a herniated disc in your lower back. you only need physical therapy, but I will order an MRI with contrast in order to find the best treatment. </p>
+
+				<p>18) You have an enlarged prostate. I need to scan your bladder to see your urinary retention volume. </p>
+
+				<p>19) Have you ever had COPD or pulmonary fibrosis? </p>
+
+				<p>20) Have you ever had  tuberculosis, pneumonia or bronchitis?</p>
+
+				<p>21) Does anyone in your family have asthma? You need to have a pulmonary function test today. </p>
+
+				<p>22) I want you to try acupuncture. It may help the headache in the back of your head. It could also reduce the sharp pain on the sole of your right foot.</p>
+
+ 			</div>
+ 			
+
+ 			
+
+
+ 		</div>
+ 	</div>
+
+</div>
+
+
+<script>
+   $('.handle').on('click', function(){
+   $('.hiding').toggleClass('showing');
+ });
+
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function myFunction(){
+	var x = document.getElementById("audioverbate");
+	if (x.style.display == "block"){
+		x.style.display = "none";
+	} else {
+		x.style.display = "block";
+	}
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>

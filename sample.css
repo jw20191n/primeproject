@@ -1,0 +1,520 @@
+
+
+/* -----------------HEADER-------------------------------*/
+
+header {
+	width: 100%
+	min-height: 100px;
+	padding: 0;
+	/*
+	padding: 1%;
+	margin-top: -25px;
+	margin-bottom: -30px;
+	*/
+	overflow: hidden;
+	-webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  	-moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  	box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  	position: relative;
+}
+
+
+header #home{
+	float:left;
+	color:#16bbf1;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	background: url(logo2.jpg) no-repeat;
+	background-size: contain;
+	height: 80px;
+	width: 230px;
+
+}
+
+#home a{
+	text-decoration:none;
+	color: inherit;
+}
+
+/* -----------------NAVIGATION--------------------------*/
+
+header nav ul{
+    float:left;
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+
+nav a {
+	text-decoration:none;
+	color: inherit;
+}
+
+nav ul {
+	background: #fff;
+	overflow:hidden;
+	color: #16bbf1;
+	padding: 0;
+	text-align:center;
+	-webkit-transition: max-height 0.4s;
+	
+}
+
+nav ul li {
+	display:inline-block;
+	padding: 20px; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	opacity: 1;
+}
+
+nav ul li:hover{
+	opacity: 0.5;
+	/*
+	background-color: #4c5775;
+	color:#fff;
+	*/
+}
+
+
+.handle {
+	width: 100%;
+	background:#fff;
+	background: url('burger.png') no-repeat;
+	background-size: contain;
+	text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: #16bbf1;
+	display: none;
+}
+
+
+
+#member {
+	float:right;
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+
+
+#member a {
+	text-decoration:none;
+	color: inherit;
+}
+
+
+#member ul {
+	background: #fff;
+	overflow:hidden;
+	color: #16bbf1;
+	padding: 0;
+	text-align:center;
+	margin-top: 0px;
+	-webkit-transition: max-height 0.4s;
+}
+
+
+
+#member ul li {
+	display:inline-block;
+	padding: 20px; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	opacity:1;
+}
+
+#member ul li:last-child a {
+	font-weight: bold;
+	background-color: #3a3c3e;
+	padding: 10px 15px;
+	border-radius: 3px;
+	color:#fff;
+}
+
+
+#member ul li:hover{
+	opacity: 0.5;
+}
+
+
+
+/*-----------------------BODY------------------------------*/
+
+.background {
+	display:flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	/*
+	background-image: url("back2.jpg");
+	background-size: contain;
+	*/
+	margin-top: 0px;
+}
+
+.samplecontainer {
+	width: 95%;
+	min-height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom:0px;
+	display: flex;
+	flex-direction: row;
+}
+
+#containerfront{
+	flex:1;
+	background-color: #f6f7f7;
+}
+
+ 
+#containerfront p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color:gray;
+	text-align: left;
+	font-weight: normal;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#containerfront h2{
+	font-family:Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #13a1cf;
+	font-weight: bold;
+}
+
+#button2{
+	background-color: #f6f7f7;
+	text-decoration: underline;
+}
+
+#containerfront h5{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#13a1cf;
+	border-bottom:1px solid gray;
+	margin-left:10px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+}
+
+
+
+.audiobutton{
+	background-color: #16bbf1;
+	border:none;
+	text-decoration:none;
+	color: inherit;
+	color:#fff;
+	border-radius: 5px;
+	height: 40px;
+	width: 150px;
+}
+
+#audioverbate{
+	background-color: #fff;
+	display: none;
+	margin:40px;
+}
+
+#showverbate{
+	border:2px solid #16bbf1;;
+	background-color: #fff;
+	text-decoration:none;
+	color: inherit;
+	color:#16bbf1;
+	border-radius: 5px;
+	height: 40px;
+	width: 180px;
+	font-size: 16px;
+}
+
+
+
+
+/* ------------------        MODAL Sign in -----------------------*/
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+	background-color: #fff;
+	border:none;
+	text-decoration:none;
+	color: inherit;
+	color:#16bbf1;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#login {
+	background-color: #16bbf1;
+	border:none;
+	text-decoration:none;
+	color: inherit;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 100px;
+	height:45px;
+}
+
+.info {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+  padding: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.container h1 {
+	text-align: center;
+	color:#16bbf1;
+}
+
+.container h4{
+	text-align: center;
+	font-weight: normal;
+}
+
+
+.container h4 a {
+	color:#16bbf1;
+}
+
+
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  color:#fff;
+}
+
+span.psw {
+  	padding-top: 16px;
+  	float: right;
+}
+
+span.psw a{
+	color: #16bbf1;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  @keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+/*------MOBILE---------*/
+
+
+
+@media screen and (max-width: 680px) {
+	header {
+		min-height: 50px;
+		width: 100%;
+	}
+
+	header #home {
+		float:center;
+		background-position: center;
+		width:100%;
+	}
+
+
+	.hiding {
+    	height:0;
+ 	}	
+
+	.showing {
+    	height:auto;
+ 	}
+
+
+
+	header nav ul{
+	    margin:0;
+	    width: 100%;
+	    display: block;
+	}
+
+	nav ul li {
+		display: block;
+    	width: 100%;
+    	text-align:center;
+    	font-size: 16px;
+    	background-color:#16bbf1;
+    	color:#fff;
+    	padding:10px;
+		margin:0;
+		overflow: hidden;
+		border-top: 1px solid #4d4d4d;
+ 	}
+
+
+	#member {
+		float:none;
+		margin:0;
+	}
+
+
+	#member ul {
+		display: block;
+		width: 100%;
+		background: #fff;
+		overflow:hidden;
+		color: #16bbf1;
+		padding: 0;
+		margin:0;
+		text-align:center;
+	}
+
+	#member ul li {
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		padding: 10px;
+		margin:0;
+		text-align: center;
+	}
+
+ 	#member ul li:last-child {
+ 		border-top: 1px solid #4d4d4d;
+ 		background-color: #3a3c3e;
+ 		border-radius: 3px;
+ 	}
+ 
+
+
+	.handle {
+    	display:inline-block;
+    	position:right;
+    	clear:both;
+    	text-align:center;
+    	cursor:pointer;
+ 	}
+
+
+	.background {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+
+	.samplecontainer {
+		flex-wrap: wrap;
+		flex-direction: row;
+		flex-basis: 90%;
+		min-height: 500px;
+	}
+
+	#containerfront {
+		flex-basis: 100%;
+		order: 1;
+	}
+
+
+ 	button {
+		background-color: #16bbf1;
+		border:none;
+		text-decoration:none;
+		color: inherit;
+		color:#fff;
+	
+ 	}
+
+ 	#button2{
+ 		color:#16bbf1;
+ 	}
+
+ 	#audioverbate{
+ 		margin:15px;
+ 	}
+
+ 	.audiobutton{
+ 	display: block;
+ 	margin:0.4em auto;
+ 	width: 90%;
+ 	}
+
+ 	#showverbate{
+ 		display: block;
+ 	margin:0.4em auto;
+ 	width: 90%;
+ 	}
+}

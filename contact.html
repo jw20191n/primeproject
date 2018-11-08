@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<head>
+	<title>Contact Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+
+
+
+</head>
+
+
+<body>
+<header>
+	<a href="prime.html"> 
+	<div id="home">
+		
+	</div>
+	</a>
+
+	<div class="handle">
+		MENU
+	</div>
+
+	<nav>
+		<ul class="hiding">
+			<li><a href="sample.html">SAMPLE</a></li>
+			<li><a href="review.html">REVIEWS</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="prep.html">PREPARATION</a></li>
+		</ul>
+
+		<div id="member">
+			<ul class="hiding">
+				<li><button id="button1" href="" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</button></li>
+				<li><a href="priceexp.html">Sign Up</a></li>
+			</ul>
+		</div>
+	</nav>
+
+</header>
+
+
+<div id="id01" class="modal">
+
+<form class="modal-content animate" action="/action_page.php">
+  
+  <div class="container">
+  	<h1>Sign In</h1>
+  	<h4>New to Prime Medical Training? <a href="priceexp.html">Sign Up here!</a></h4>
+  	<label class="info"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+	<label class="info"><b>Password</b></label>
+  	<input type="password" placeholder="Enter Password" name="psw" required>
+    
+  	<button type="submit" id="login">Log In</button>
+  	<input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  	 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+ 	 <span class="psw"> <a href="#">I forgot my password</a></span>
+  </div>
+
+</form>
+
+</div>
+
+
+
+<div class="background">
+
+	<div class="contactcontainer">
+			<p class="title">Quick Contact</p>
+			<p>Contact us today and we will reply you within 24 hours.</p>
+
+  			<form action="" id="contactform">
+
+  				<div id="formleft">	
+    				<div class="input-bg"> <input type="text" class="contact" id="name" name="name" placeholder="name"></div>
+
+   					<div class="input-bg"><input type="text" class="contact" id="email" name="email" placeholder="email"></div>
+
+   					<div class="input-bg"><input type="text" class="contact" id="phone" name="phone" placeholder="phone"></div>
+   				</div>
+    		
+    			<div id="formright">
+    				<div class="message-bg">
+    				<textarea id="message" name="message" placeholder="Message" rows="9" cols="50"></textarea>
+    				</div>
+    				<input type="submit" value="Submit">
+    			</div>
+
+  			</form>
+
+
+ 		
+ 	</div>
+
+</div>
+
+
+<script>
+   $('.handle').on('click', function(){
+   $('.hiding').toggleClass('showing');
+ });
+
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function myFunction(){
+	var x = document.getElementById("audioverbate");
+	if (x.style.display == "block"){
+		x.style.display = "none";
+	} else {
+		x.style.display = "block";
+	}
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
